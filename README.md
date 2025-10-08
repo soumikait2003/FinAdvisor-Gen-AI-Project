@@ -112,4 +112,29 @@ FinAdvise is a Streamlit-based AI-powered finance assistant designed to simplify
 - **High-Risk Queries:** Queries like _"Should I liquidate my retirement account?"_ trigger a simulated HITL response.
 
 ## Project Structure
+finadvise/
+├── env4/ # Virtual environment directory
+├── .env # Environment variables (API keys)
+├── app.py # Main Streamlit application
+├── requirements.txt # Python dependencies
+├── README.md # Project overview and setup
+├── FinAdvise_Documentation.md # Detailed documentation
+└── .gitignore # Excludes env4/, .env
+
+
+## Notes
+
+- **Stock Data:** Uses Alpha Vantage API for real-time stock prices. Free tier limits to 5 calls/minute; monitor usage or upgrade for higher limits.
+- **Debugging:** Check terminal logs for API response details or errors (e.g., rate limits, invalid symbols).
+- **Security:** Store API keys in `.env` to avoid hardcoding.
+
+## Troubleshooting
+
+- Verify API keys in `.env`.
+- Ensure internet connectivity for Alpha Vantage API.
+- Upgrade pip if dependency issues arise:
+
+    ```
+    python -m pip install --upgrade pip
+    ```
 
